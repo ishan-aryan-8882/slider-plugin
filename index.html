@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/css/twentytwenty.min.css">
+    <style>
+        .slider img{
+            width: 600px;
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div id="container1">
+            <img src="p61.jpg" alt="">
+            <img src="p62.jpg" alt="">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src='slider/twentytwenty-master/js/jquery.event.move.js'></script>
+    <script src='slider/twentytwenty-master/js/jquery.twentytwenty.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/js/jquery.twentytwenty.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#container1").twentytwenty();
+        });
+    </script>
+</body>
+</html>
